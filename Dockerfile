@@ -7,7 +7,7 @@ ARG DB_LOCAL_HOST=10.40.48.3
 ARG CLOUD_SQL_CONNECTION_NAME=hack-aso-grupo-08:us-central1:mysql
 
 RUN apt-get update -y && \
-    apt-get install -y python-pip python-dev
+    apt-get install -y pip python-dev
 
 # We copy just the requirements.txt first to leverage Docker cache
 COPY ./requirements.txt /app/requirements.txt
