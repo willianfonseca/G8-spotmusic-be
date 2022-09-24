@@ -36,7 +36,7 @@ def get_songs():
            got_songs = jsonify(songs)
 
         else:
-            got_songs = 'Nenhuma Musica Cadastrada na Playlist'
+            got_songs = 'Nenhuma Musica Cadastrada na Playlists'
 
     conn.close()
 
